@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ActiveResult from './active-result';
 
-export default (props) => {
-    return (
-        <section className="hero is-fullheight is-info is-bold">
-            <div className="hero-body">
-                <div className="container">
-                    <h1 className="title is-1">
-                        You are a {props.winner}
-                    </h1>
-                    <a onClick={props.startOver}><h2 className="subtitle is-3">Start Over</h2></a>
+export default class Results extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <section className="hero is-fullheight is-light is-bold has-text-centered">
+                <div className="hero-body">
+                    <ActiveResult
+                        winner={this.props.winner}
+                        startOver={this.props.startOver}
+                    />
                 </div>
-            </div>
-        </section>
-    )
+            </section>
+        )
+    }
 }

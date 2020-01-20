@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import ActiveQuestion from './active-question';
 import Questions from './question-store';
 
-const answers = ['Lion', 'Beaver', 'Otter', 'GoldenRetriever'];
+const answers = ['Lion', 'Otter', 'GoldenRetriever', 'Beaver'];
 export default class InProgress extends Component {
     constructor(props) {
         super(props);
@@ -42,7 +42,7 @@ export default class InProgress extends Component {
         if (this.state.index < 9) {
             this.updateScore(choice);
             this.setState({ currentQuestion: Questions[this.state.index + 1], index: this.state.index + 1 });
-            
+
         } else {
             this.updateScore(choice);
             this.props.endQuiz(this.getWinner());
@@ -51,34 +51,32 @@ export default class InProgress extends Component {
 
     getWinner() {
         let indexOfWinner = 0;
-        for (let i = 0; i < 4; i ++){
-            if (this.state.score[this.convertIndexToKey(i)] > this.state.score[this.convertIndexToKey(indexOfWinner)]){
+        for (let i = 0; i < 4; i++) {
+            if (this.state.score[this.convertIndexToKey(i)] > this.state.score[this.convertIndexToKey(indexOfWinner)]) {
                 indexOfWinner = i;
             }
         }
         return this.convertIndexToKey(indexOfWinner);
     }
 
-    convertIndexToKey(index){
+    convertIndexToKey(index) {
         return answers[index];
     }
 
     render() {
 
         return (
-            //<Fragment>
-                <ActiveQuestion
-                    questionNumber={this.state.currentQuestion.number}
-                    options={this.state.currentQuestion.options}
-                    next={(choice) => this.nextQuestion(choice)}
-                />
-
-                /*{ <p>Lion: {this.state.score['Lion']}</p>
-                <p>Beaver: {this.state.score['Beaver']}</p>
-                <p>Otter: {this.state.score['Otter']}</p>
-                <p>Golden Retriever: {this.state.score['GoldenRetriever']}</p>
-                <p>Winner: {this.getWinner()}</p> }*/
-            //</Fragment>
+            <ActiveQuestion
+                questionNumber={this.state.currentQuestion.number}
+                options={this.state.currentQuestion.options}
+                next={(choice) => this.nextQuestion(choice)}
+            />
         );
     }
 }
+
+//<p>Lion: {this.state.score['Lion']}</p>
+  //              <p>Beaver: {this.state.score['Beaver']}</p>
+    //            <p>Otter: {this.state.score['Otter']}</p>
+      //          <p>Golden Retriever: {this.state.score['GoldenRetriever']}</p>
+        //        <p>Winner: {this.getWinner()}</p> 

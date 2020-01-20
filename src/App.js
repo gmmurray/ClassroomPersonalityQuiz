@@ -10,7 +10,7 @@ export default class App extends Component {
     this.state = {
       testing: false,
       complete: false,
-      winner: null
+      winner: ''
     };
   }
 
