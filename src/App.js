@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './sass/styles.scss';
+import Intro from './quiz/intro.js';
+import InProgress from './quiz/in-progress';
+import Results from './quiz/results';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      testing: false,
+      complete: false,
+      winner: null
+    };
+  }
+
+  render() {
+    if (!this.state.testing && !this.state.complete) {
+      return (
+        <Intro 
+          beginQuiz={() => this.setState({testing: true})}
+        />
+      )
+    } else if (this.state.testing && !this.state.complete){
+      return (
+        <InProgress
+        endQuiz={(win) => this.setState({testing: false, complete: true, winner: win})}
+        />
+      )
+    } else if (!this.state.testing && this.state.complete) {
+      return (
+        <Results 
+          winner={this.state.winner}
+          startOver={() => this.setState({testing: false, complete: false})}
+        />
+      )
+    }
+  }
 }
-
-export default App;
