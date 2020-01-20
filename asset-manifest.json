@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ClassroomPersonalityQuiz/static/css/main.f34cee9f.chunk.css",
-    "main.js": "/ClassroomPersonalityQuiz/static/js/main.646cabe7.chunk.js",
-    "main.js.map": "/ClassroomPersonalityQuiz/static/js/main.646cabe7.chunk.js.map",
+    "main.css": "/ClassroomPersonalityQuiz/static/css/main.c56b8d80.chunk.css",
+    "main.js": "/ClassroomPersonalityQuiz/static/js/main.2cec0e88.chunk.js",
+    "main.js.map": "/ClassroomPersonalityQuiz/static/js/main.2cec0e88.chunk.js.map",
     "runtime-main.js": "/ClassroomPersonalityQuiz/static/js/runtime-main.7764752c.js",
     "runtime-main.js.map": "/ClassroomPersonalityQuiz/static/js/runtime-main.7764752c.js.map",
     "static/js/2.7f11b855.chunk.js": "/ClassroomPersonalityQuiz/static/js/2.7f11b855.chunk.js",
     "static/js/2.7f11b855.chunk.js.map": "/ClassroomPersonalityQuiz/static/js/2.7f11b855.chunk.js.map",
     "index.html": "/ClassroomPersonalityQuiz/index.html",
-    "precache-manifest.4f3f5ed8947d630d3a474c9034dc8b63.js": "/ClassroomPersonalityQuiz/precache-manifest.4f3f5ed8947d630d3a474c9034dc8b63.js",
+    "precache-manifest.15d170f7af3985fc4e9ff4f32f91120c.js": "/ClassroomPersonalityQuiz/precache-manifest.15d170f7af3985fc4e9ff4f32f91120c.js",
     "service-worker.js": "/ClassroomPersonalityQuiz/service-worker.js",
-    "static/css/main.f34cee9f.chunk.css.map": "/ClassroomPersonalityQuiz/static/css/main.f34cee9f.chunk.css.map",
+    "static/css/main.c56b8d80.chunk.css.map": "/ClassroomPersonalityQuiz/static/css/main.c56b8d80.chunk.css.map",
     "static/js/2.7f11b855.chunk.js.LICENSE": "/ClassroomPersonalityQuiz/static/js/2.7f11b855.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.7764752c.js",
     "static/js/2.7f11b855.chunk.js",
-    "static/css/main.f34cee9f.chunk.css",
-    "static/js/main.646cabe7.chunk.js"
+    "static/css/main.c56b8d80.chunk.css",
+    "static/js/main.2cec0e88.chunk.js"
   ]
 }

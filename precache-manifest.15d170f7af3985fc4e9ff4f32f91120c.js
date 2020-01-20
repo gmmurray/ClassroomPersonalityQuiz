@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96be2800b2ab79b67baf81315b9e2011",
+    "revision": "d8f49824879d195eee471d5ee0bd1cb4",
     "url": "/ClassroomPersonalityQuiz/index.html"
   },
   {
-    "revision": "85d6522c1626576e779f",
-    "url": "/ClassroomPersonalityQuiz/static/css/main.f34cee9f.chunk.css"
+    "revision": "4b492ff8241940c87347",
+    "url": "/ClassroomPersonalityQuiz/static/css/main.c56b8d80.chunk.css"
   },
   {
     "revision": "a2e49adacc0d80f5b1f0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ClassroomPersonalityQuiz/static/js/2.7f11b855.chunk.js.LICENSE"
   },
   {
-    "revision": "85d6522c1626576e779f",
-    "url": "/ClassroomPersonalityQuiz/static/js/main.646cabe7.chunk.js"
+    "revision": "4b492ff8241940c87347",
+    "url": "/ClassroomPersonalityQuiz/static/js/main.2cec0e88.chunk.js"
   },
   {
     "revision": "7e3f40364ca6edee6f54",
